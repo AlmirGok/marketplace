@@ -3,7 +3,7 @@ import LogoSvg from "@assets/logo1.svg";
 import LogoSvgTwo from "@assets/marketspace.svg";
 
 import { Input, InputPassword } from "@components/Input";
-import { Button } from "@components/Button";
+import { ButtonNative } from "@components/Button";
 
 export function SignIn({ navigation }) {
   return (
@@ -32,7 +32,7 @@ export function SignIn({ navigation }) {
             autoCapitalize="none"
           />
 
-          <Button
+          <ButtonNative
             mt="5"
             title="Acessar"
             onPress={() => navigation.navigate("Tabs")}
@@ -41,7 +41,7 @@ export function SignIn({ navigation }) {
       </Box.Content>
       <Box.SectionBottom>
         <Box.TextInputTop>Ainda não tem acesso?</Box.TextInputTop>
-        <Button
+        <ButtonNative
           title="Criar uma conta"
           variant="outline"
           onPress={() => navigation.navigate("SignUp")}

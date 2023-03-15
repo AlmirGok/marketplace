@@ -7,7 +7,7 @@ import * as Box from "./styled";
 import { Header } from "@components/Header";
 import { InputFilter } from "@components/InputFilter";
 import { MyAdverts } from "@components/MyAdverts";
-import { Cards } from "../../components/Cards";
+import { Cards } from "@components/Cards";
 
 import { DATA } from "./data";
 
@@ -32,6 +32,7 @@ export function Home({ navigation }) {
               title={item.title}
               value={item.value}
               image={item.image}
+              state={item.state}
               avatar={item.avatar}
               navigation={navigation}
             />
@@ -40,8 +41,7 @@ export function Home({ navigation }) {
           showsHorizontalScrollIndicator={false}
           _contentContainerStyle={{
             pb: 2,
-
-            justifyContent: "space-between",
+            mt: 3,
           }}
         />
       </Box.ContainerScroll>

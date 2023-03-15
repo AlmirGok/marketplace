@@ -12,7 +12,7 @@ type Props = IButtonProps & {
 
 import { AntDesign } from "@expo/vector-icons";
 
-export function Button({ title, variant = "solid", ...rest }: Props) {
+export function ButtonNative({ title, variant = "solid", ...rest }: Props) {
   return (
     <ButtonNativeBase
       w="full"

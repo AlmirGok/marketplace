@@ -3,8 +3,9 @@ import User from "../../assets/person.png";
 export const DATA = [
   {
     id: "0",
-    title: "Tênis vermelho",
+    title: "Tênis vermelho, Camisa verde",
     value: "59,90",
+    state: "used",
     avatar:
       "https://t4.ftcdn.net/jpg/03/64/21/11/360_F_364211147_1qgLVxv1Tcq0Ohz3FawUfrtONzz8nq3e.jpg",
     image:
@@ -32,6 +33,7 @@ export const DATA = [
     id: "2",
     title: "Sofá 1,80m ",
     value: "1.200,00",
+    state: "used",
     avatar:
       "https://newprofilepic2.photo-cdn.net//assets/images/article/profile.jpg",
     image:
@@ -50,6 +52,7 @@ export const DATA = [
     id: "2",
     title: "Sofá 1,80m ",
     value: "1.200,00",
+    state: "used",
     avatar:
       "https://newprofilepic2.photo-cdn.net//assets/images/article/profile.jpg",
     image:
@@ -59,6 +62,7 @@ export const DATA = [
     id: "2",
     title: "Sofá 1,80m ",
     value: "1.200,00",
+    state: "used",
     avatar:
       "https://newprofilepic2.photo-cdn.net//assets/images/article/profile.jpg",
     image:

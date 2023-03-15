@@ -14,7 +14,7 @@ import Pin from "../assets/pin-icon.png";
 import { TouchableOpacity } from "react-native";
 import { Details } from "../screens/details";
 
-export function Cards({ title, image, value, navigation, avatar }) {
+export function Cards({ title, image, value, navigation, avatar, state }) {
   return (
     <Pressable
       flex="1"
@@ -36,7 +36,7 @@ export function Cards({ title, image, value, navigation, avatar }) {
             <Image source={{ uri: image }} alt="image" />
           </AspectRatio>
           <Center
-            bg="violet.500"
+            bg={state === "used" ? "gray.2" : "blue.200"}
             _text={{
               color: "warmGray.50",
               fontWeight: "700",
@@ -49,7 +49,7 @@ export function Cards({ title, image, value, navigation, avatar }) {
             py="1"
             rounded="10"
           >
-            NOVO
+            {state === "used" ? "USADO" : "NOVO"}
           </Center>
           <Image
             source={{ uri: avatar }}
@@ -67,11 +67,18 @@ export function Cards({ title, image, value, navigation, avatar }) {
         </Box>
         <Stack p="2">
           <Stack>
-            <Text fontSize="14px" ml="-1">
+            <Text fontSize="14px" ml="-1" isTruncated w="100%">
               {title}
             </Text>
           </Stack>
-          <Text fontWeight="400">r$ {value}</Text>
+          <HStack alignItems="flex-end">
+            <Text fontWeight="700" fontSize="15px" pr="3px" pb="1px">
+              R$
+            </Text>
+            <Text fontWeight="700" fontSize="18px">
+              {value}
+            </Text>
+          </HStack>
         </Stack>
       </Box>
     </Pressable>

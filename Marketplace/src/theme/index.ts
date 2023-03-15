@@ -21,6 +21,7 @@ export const Tema = extendTheme({
       6: "#EDECEE",
       5: "#D9D8DA",
       4: "#9F9BA1",
+      3: "#5F5B62",
       2: "#3E3A40",
       1: "#1A181B",
     },
@@ -33,7 +34,7 @@ export const Tema = extendTheme({
     xs: 12,
     sm: 14,
     md: 16,
-    lg: 18,
+    lg: 17,
     xl: 20,
   },
   sizes: {

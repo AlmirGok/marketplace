@@ -15,5 +15,5 @@ export const ContainerScroll = styled.ScrollView`
 export const TextSm = styled.Text`
   font-size: 14px;
   color: #5f5b62;
-  padding-top: 25px;
+  padding-top: 35px;
 `;

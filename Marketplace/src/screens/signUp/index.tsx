@@ -4,7 +4,7 @@ import Avatar from "@assets/Avatar.svg";
 import Edit from "@assets/Edit.svg";
 
 import { Input, InputPassword } from "@components/Input";
-import { Button, ButtonBlack } from "@components/Button";
+import { ButtonNative, ButtonBlack } from "@components/Button";
 
 export function SignUp() {
   return (
@@ -54,7 +54,7 @@ export function SignUp() {
       </Box.Content>
       <Box.SectionBottom>
         <Box.TextInputTop>Já tem uma conta?</Box.TextInputTop>
-        <Button title="Ir para o login" variant="outline" />
+        <ButtonNative title="Ir para o login" variant="outline" />
       </Box.SectionBottom>
     </Box.ContainerScroll>
   );
