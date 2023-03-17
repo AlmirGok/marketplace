@@ -3,7 +3,7 @@ import LogoSvg from "@assets/logo1.svg";
 import Avatar from "@assets/Avatar.svg";
 import Edit from "@assets/Edit.svg";
 
-import { Input, InputPassword } from "@components/Input";
+import { Input, InputPassword } from "@components/Inputs";
 import { ButtonNative, ButtonBlack } from "@components/Button";
 
 export function SignUp() {

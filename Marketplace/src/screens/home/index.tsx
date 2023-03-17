@@ -4,7 +4,7 @@ import { useNavigation } from "@react-navigation/native";
 
 import * as Box from "./styled";
 
-import { Header } from "@components/Header";
+import { HeaderHome } from "@components/Headers";
 import { InputFilter } from "@components/InputFilter";
 import { MyAdverts } from "@components/MyAdverts";
 import { Cards } from "@components/Cards";
@@ -14,7 +14,7 @@ import { DATA } from "./data";
 export function Home({ navigation }) {
   return (
     <Box.Container>
-      <Header name="Maria!" navigation={navigation} />
+      <HeaderHome name="Maria!" navigation={navigation} />
       <Box.ContainerScroll>
         <Box.TextSm>Seus produtos anunciados para venda </Box.TextSm>
 

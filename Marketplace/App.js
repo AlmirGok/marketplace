@@ -15,6 +15,7 @@ import { Details } from "./src/screens/details";
 import { Profile } from "./src/screens/profile";
 import { Favorite } from "./src/screens/favorite";
 import { Home } from "./src/screens/home";
+import { CreateAd } from "./src/screens/createAd";
 
 import {
   FontAwesome5,
@@ -79,6 +80,7 @@ export default function App() {
           <Stack.Screen name="Tabs" component={Tabs} />
           <Stack.Screen name="SignUp" component={SignUp} />
           <Stack.Screen name="SignIn" component={SignIn} />
+          <Stack.Screen name="CreateAd" component={CreateAd} />
         </Stack.Navigator>
       </NavigationContainer>
     </NativeBaseProvider>

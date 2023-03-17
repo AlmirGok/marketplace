@@ -152,9 +152,9 @@ export function InputFilter({ ...rest }) {
               variant="outline"
               mr="2%"
               w="48%"
-              title="Criar anúncio"
+              title="Resetar filtros"
             />
-            <ButtonBlack ml="2%" w="48%" title="Criar anúncio" />
+            <ButtonBlack ml="2%" w="48%" title="Aplicar filtros" />
           </View>
         </Actionsheet.Content>
       </Actionsheet>

@@ -2,7 +2,7 @@ import * as Box from "./styled";
 import LogoSvg from "@assets/logo1.svg";
 import LogoSvgTwo from "@assets/marketspace.svg";
 
-import { Input, InputPassword } from "@components/Input";
+import { Input, InputPassword } from "@components/Inputs";
 import { ButtonNative } from "@components/Button";
 
 export function SignIn({ navigation }) {
