@@ -16,11 +16,14 @@ import { Profile } from "./src/screens/profile";
 import { Favorite } from "./src/screens/favorite";
 import { Home } from "./src/screens/home";
 import { CreateAd } from "./src/screens/createAd";
+import { MyAds } from "./src/screens/myAds";
 
 import {
   FontAwesome5,
   AntDesign,
   MaterialCommunityIcons,
+  Octicons,
+  Ionicons,
 } from "@expo/vector-icons";
 
 const Stack = createNativeStackNavigator();
@@ -48,16 +51,25 @@ function Tabs() {
         component={Home}
         options={{
           tabBarIcon: ({ color }) => (
-            <AntDesign name="heart" size={24} color={color} />
+            <Octicons name="home" size={24} color={color} />
           ),
         }}
       />
       <Tab.Screen
-        name="profile"
-        component={Profile}
+        name="myAds"
+        component={MyAds}
         options={{
           tabBarIcon: ({ color }) => (
-            <FontAwesome5 name="user-alt" size={24} color={color} />
+            <Ionicons name="pricetags-outline" size={24} color={color} />
+          ),
+        }}
+      />
+      <Tab.Screen
+        name="SignIn"
+        component={SignIn}
+        options={{
+          tabBarIcon: ({ color }) => (
+            <Ionicons name="exit-outline" size={24} color={color} />
           ),
         }}
       />
